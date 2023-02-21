@@ -50,6 +50,10 @@ body {
 
 .advice-container {
   width: 444px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
 }
 
 #advice-num {
@@ -71,7 +75,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px;
 }
 
 .btn-container {
@@ -80,7 +83,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 236px;
+  left: 238px;
   top: 299px;
 }
 button {
@@ -91,7 +94,7 @@ button {
   background: var(--Neon-green);
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .card-wrapper {
     background: var(--Dark-Graish-Blue);
     width: 343px;
@@ -113,6 +116,7 @@ button {
 
   .advice-container {
     width: 295px;
+    height: 135px;
   }
 
   #advice-num {
@@ -128,6 +132,13 @@ button {
     font-size: 24px;
     font-weight: var(--Font-weight);
     text-align: center;
+  }
+
+  .pattern-divider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
   }
 
   .btn-container {
