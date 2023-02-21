@@ -16,7 +16,7 @@ function fetchAdvice() {
   fetch(API)
     .then((response) => response.json(response))
     .then((data) => {
-      adviceText.innerHTML = data.slip.advice;
+      adviceText.innerHTML = `"${data.slip.advice}"`;
       adviceID.innerHTML = `#${data.slip.id}`;
     });
 }
