@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --Dark-blue: #202733;
+  --Dark-Graish-Blue: #313a48;
+  --Grayish-Blue: #4f5d74;
+  --Light-Cyan: #cee3e9;
+  --Neon-green: #53ffaa;
+  --Quote-Font-Size: 28px;
+  --Heading-Font-Size: 13px;
+  --Font-family: "Manrope", sans-serif;
+  --Font-weight: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--Dark-blue);
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.card-wrapper {
+  background: var(--Dark-Graish-Blue);
+  width: 540px;
+  height: 332px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.advice-num-container {
+  padding: 40px;
+}
+
+.advice-container {
+  width: 444px;
+}
+
+#advice-num {
+  color: var(--Neon-green);
+  font-family: var(--Font-family);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+}
+
+#advice {
+  color: var(--Light-Cyan);
+  font-family: var(--Font-family);
+  font-size: 24px;
+  font-weight: var(--Font-weight);
+  text-align: center;
+}
+
+.pattern-divider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.btn-container {
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 236px;
+  top: 299px;
+}
+button {
+  width: 64px;
+  height: 64px;
+  border-radius: 100px;
+  border-style: none;
+  background: var(--Neon-green);
+}
+
+@media only screen and (max-width: 500px) {
+  .card-wrapper {
+    background: var(--Dark-Graish-Blue);
+    width: 343px;
+    height: 315px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .advice-num-container {
+    padding: 20px;
+  }
+
+  .advice-container {
+    width: 295px;
+  }
+
+  #advice-num {
+    color: var(--Neon-green);
+    font-family: var(--Font-family);
+    font-size: 11px;
+    letter-spacing: 0.25em;
+  }
+
+  #advice {
+    color: var(--Light-Cyan);
+    font-family: var(--Font-family);
+    font-size: 24px;
+    font-weight: var(--Font-weight);
+    text-align: center;
+  }
+
+  .btn-container {
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 137px;
+    top: 285px;
+  }
+  button {
+    width: 64px;
+    height: 64px;
+    border-radius: 100px;
+    border-style: none;
+    background: var(--Neon-green);
+  }
+}
