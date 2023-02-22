@@ -5,7 +5,7 @@ const adviceID = document.querySelector(".advice-id");
 const dividerImage = document.querySelector(".divider-image");
 
 window.addEventListener("resize", function () {
-  if ((this.window.innerWidth = 390)) {
+  if (this.window.screen.width < 800) {
     dividerImage.src = "./images/pattern-divider-mobile.svg";
   } else {
     dividerImage.src = "./images/pattern-divider-desktop.svg";
